@@ -1,5 +1,8 @@
 import { createClient } from '@/lib/supabase/server'
 import { NextRequest, NextResponse } from 'next/server'
+import { Database } from '@/types/supabase'
+
+type UserProfile = Database['public']['Tables']['user_profile']['Row']
 
 export async function GET(request: NextRequest) {
   try {
@@ -20,7 +23,7 @@ export async function GET(request: NextRequest) {
       .from('user_profile')
       .select('*')
       .eq('id', session.user.id)
-      .single()
+      .single<UserProfile>()
 
     if (profileError) {
       console.error('Error fetching profile:', profileError)

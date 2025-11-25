@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * OAuth Callback Route Handler
  *

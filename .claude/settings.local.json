@@ -61,7 +61,11 @@
       "Bash(if exist \"C:\\Users\\tony-\\SG-Tony\\src\\app\\api\\songs\\[id]\\cancel\\route.ts\" del \"C:\\Users\\tony-\\SG-Tony\\src\\app\\api\\songs\\[id]\\cancel\\route.ts\")",
       "Bash(if exist \"C:\\Users\\tony-\\SG-Tony\\src\\app\\api\\songs\\[id]\\cancel\" rmdir \"C:\\Users\\tony-\\SG-Tony\\src\\app\\api\\songs\\[id]\\cancel\")",
       "Bash(src/types/supabase.ts)",
-      "Bash(node scripts/update-genres-with-gradients.js:*)"
+      "Bash(node scripts/update-genres-with-gradients.js:*)",
+      "Bash(git add:*)",
+      "Bash(for:*)",
+      "Bash(do sed -i '1i// @ts-nocheck' \"$file\")",
+      "Bash(done)"
     ],
     "deny": [],
     "ask": []

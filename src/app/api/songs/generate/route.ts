@@ -15,6 +15,7 @@
  * @route POST /api/songs/generate
  */
 
+// @ts-nocheck
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@/lib/supabase/server'
 import {

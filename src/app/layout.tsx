@@ -4,6 +4,8 @@ import { BottomNavigation } from "@/components/layout/bottom-navigation";
 import { LowCreditWarningWrapper } from "@/components/low-credit-warning-wrapper";
 import { createClient } from "@/lib/supabase/server";
 
+export const dynamic = 'force-dynamic'
+
 export const metadata: Metadata = {
   title: "Musikkfabrikken - Lag norske sanger med AI",
   description: "AI-drevet norsk sanggenerator. Lag morsomme og personlige norske sanger med autentisk norsk uttale. Perfekt til fester, bursdager og sosiale medier.",

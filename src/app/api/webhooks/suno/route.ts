@@ -179,6 +179,8 @@ async function uploadToSupabaseStorage(
 /**
  * Main webhook handler
  */
+export const dynamic = 'force-dynamic'
+
 export async function POST(request: Request) {
   const startTime = Date.now()
 

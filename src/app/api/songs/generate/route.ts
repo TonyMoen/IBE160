@@ -72,6 +72,8 @@ function errorResponse(
  * @param request - Next.js request object
  * @returns JSON response with song ID or error
  */
+export const dynamic = 'force-dynamic'
+
 export async function POST(request: NextRequest) {
   try {
     // Step 1: Validate authentication

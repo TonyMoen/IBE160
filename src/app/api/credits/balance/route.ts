@@ -4,6 +4,8 @@ import { Database } from '@/types/supabase'
 
 type UserProfile = Database['public']['Tables']['user_profile']['Row']
 
+export const dynamic = 'force-dynamic'
+
 export async function GET(request: NextRequest) {
   try {
     const supabase = await createClient()

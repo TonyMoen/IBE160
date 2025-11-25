@@ -11,6 +11,8 @@ import Stripe from 'stripe'
 import { stripe } from '@/lib/stripe'
 import { createClient } from '@supabase/supabase-js'
 
+export const dynamic = 'force-dynamic'
+
 export async function POST(request: Request) {
   try {
     // 1. Get raw body for signature verification

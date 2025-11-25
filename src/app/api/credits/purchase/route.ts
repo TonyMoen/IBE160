@@ -13,6 +13,8 @@ const purchaseSchema = z.object({
   packageId: z.enum(['starter', 'pro', 'premium']),
 })
 
+export const dynamic = 'force-dynamic'
+
 export async function POST(request: Request) {
   try {
     // 1. Authenticate user

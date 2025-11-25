@@ -43,6 +43,8 @@ function errorResponse(
  * @param params - Route parameters containing song ID
  * @returns JSON response with song data or error
  */
+export const dynamic = 'force-dynamic'
+
 export async function GET(
   request: NextRequest,
   { params }: { params: Promise<{ id: string }> }

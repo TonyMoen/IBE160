@@ -65,7 +65,10 @@
       "Bash(git add:*)",
       "Bash(for:*)",
       "Bash(do sed -i '1i// @ts-nocheck' \"$file\")",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(git commit:*)",
+      "Bash(git remote:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []

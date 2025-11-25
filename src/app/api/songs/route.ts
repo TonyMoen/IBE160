@@ -11,6 +11,8 @@ import { NextResponse } from 'next/server'
  * - offset: number (default: 0)
  * - limit: number (default: 20, max: 50)
  */
+export const dynamic = 'force-dynamic'
+
 export async function GET(request: Request) {
   const supabase = await createClient()
 
